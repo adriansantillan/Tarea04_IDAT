@@ -10,7 +10,6 @@ header {
   animation-name: example;
   animation-duration: 4s;
 }
-
 header #titulo {
   display: grid;
   grid-column: 3/4;
@@ -18,13 +17,11 @@ header #titulo {
   align-content: center;
   padding-bottom: 10px;
 }
-
 header #usuariocabecera {
   grid-column: 4/5;
   justify-self: center;
   align-self: center;
 }
-
 header img {
   width: 50px;
   height: 50px;
@@ -41,7 +38,6 @@ header img {
     padding-bottom: 10px;
   }
 }
-
 nav {
   grid-column: 1/5;
   border: solid black;
@@ -53,24 +49,19 @@ nav {
   padding: 0px;
   margin: 0px;
 }
-
 nav .navmovil .oculto button {
   visibility: hidden;
   display: none;
 }
-
 nav .navmovil ul li {
   width: 100%;
 }
-
 nav .navmovil ul li .ulnav {
   height: 100%;
 }
-
 nav .navmovil ul li .ulnav ul li {
   border-right: solid black 1px;
 }
-
 nav .navmovil ul {
   padding: 0;
   margin: 0;
@@ -82,17 +73,14 @@ nav .navmovil ul {
   width: 100%;
   height: 100%;
 }
-
 nav .navmovil ul #botonuser {
   visibility: hidden;
   display: none;
 }
-
 nav .navmovil ul #boton5 {
   visibility: hidden;
   display: none;
 }
-
 nav .ulnav2 ul {
   padding: 0;
   margin: 0;
@@ -103,17 +91,14 @@ nav .ulnav2 ul {
   list-style-type: none;
   height: 100%;
 }
-
 nav .ulnav2 li #lupa {
   width: 20px;
   height: 20px;
 }
-
 nav img {
   width: 30px;
   height: 30px;
 }
-
 nav .ingreso {
   background-color: white;
   font-weight: bold;
@@ -121,7 +106,6 @@ nav .ingreso {
   animation: mymove 1.5s;
   animation-timing-function: ease-in-out;
 }
-
 @keyframes mymove {
   from {
     left: 0px;
@@ -133,11 +117,9 @@ nav .ingreso {
     right: 100px;
   }
 }
-
 nav #formbuscar {
   width: 100%;
 }
-
 nav .button {
   color: white;
   margin: 0.5%;
@@ -149,40 +131,33 @@ nav .button {
   transition-duration: 0.4s;
   cursor: pointer;
 }
-
 nav .boton-hamburguesa {
   padding: 15px;
   border: 2px solid #4d4d4d;
   border-radius: 7px;
   background-color: white;
 }
-
 nav #menu-hamburguesa {
   display: none;
   visibility: hidden;
 }
-
 nav .button5 {
   background-color: white;
   color: black;
   border-radius: 5px;
   border: 2px solid #555555;
 }
-
 nav .button5:hover {
   background-color: #555555;
   color: white;
 }
-
 nav input[type=search] {
   width: 30%;
   transition: all 0.4s ease-in-out;
 }
-
 nav input[type=search]:focus {
   width: 50%;
 }
-
 @keyframes example {
   from {
     background-color: #008CBA;
@@ -191,7 +166,6 @@ nav input[type=search]:focus {
     background-color: black;
   }
 }
-
 nav .menu-movil {
   background-color: black;
   position: absolute;
@@ -204,14 +178,12 @@ nav .menu-movil {
   opacity: 70%;
   padding: 15px 0px 15px 15px;
 }
-
 nav .item-menu-movil {
   color: white;
   font-weight: bolder;
   margin: 5px auto;
   padding: 2.5%;
 }
-
 nav .item-menu-movil i {
   margin-right: 15px;
 }
@@ -221,34 +193,42 @@ nav .item-menu-movil i {
     display: none;
     visibility: hidden;
   }
+
   nav #menu-hamburguesa {
     display: inline-block;
     visibility: visible;
     margin: 12%;
   }
+
   nav .navmovil {
     display: none;
     visibility: hidden;
   }
+
   #menu-hamburguesa .boton-hamburguesa:hover {
     background-color: black;
     color: white;
   }
+
   #menu-hamburguesa .boton-hamburguesa:hover + div.menu-movil, #menu-hamburguesa .menu-movil:hover {
     display: block;
     visibility: visible;
   }
+
   nav .ulnav2 {
     padding: 2%;
     display: inline-block;
   }
+
   #inputbuscador {
     width: 30%;
     transition: all 0.4s ease-in-out;
   }
+
   #inputbuscador:focus {
     width: 50%;
   }
+
   nav {
     grid-column: 1/5;
     border: solid black;
@@ -261,17 +241,19 @@ nav .item-menu-movil i {
     margin: 0px;
   }
 }
-
 @media screen and (max-width: 528px) {
   #inputbuscador {
     width: 30%;
   }
+
   #inputbuscador:focus {
     width: 50%;
   }
+
   nav .ulnav2 ul #formbuscar button label {
     display: none;
   }
+
   nav .menu-movil {
     top: 330px;
     width: 30%;
@@ -279,7 +261,6 @@ nav .item-menu-movil i {
     opacity: 80%;
   }
 }
-
 @media screen and (max-width: 446px) {
   nav .menu-movil {
     left: 8px;
@@ -287,15 +268,16 @@ nav .item-menu-movil i {
     opacity: 80%;
     top: 330px;
   }
+
   nav .ulnav2 ul #formbuscar label {
     display: none;
     visibility: hidden;
   }
+
   nav .ulnav2 ul #formbuscar input {
     width: 40%;
   }
 }
-
 @media screen and (max-width: 360px) {
   .menu-movil {
     background-color: black;
@@ -309,14 +291,13 @@ nav .item-menu-movil i {
     padding: 15px 0px 15px 15px;
   }
 }
-
 main {
   background-image: url(../Imagenes/fondo.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  color: #030303;
+  color: black;
   grid-column: 1/5;
   border: solid black;
   font-family: Courier New, Courier, monospace;
@@ -325,15 +306,12 @@ main {
   justify-content: center;
   background-color: #e1edf3;
 }
-
 main form#formain input {
   border: 2px solid #8c8c8c;
   border-radius: 5px;
   height: 25px;
 }
-
 main .buttonForm {
-  color: white;
   padding: 16px 32px;
   text-align: center;
   text-decoration: none;
@@ -343,7 +321,6 @@ main .buttonForm {
   transition-duration: 0.4s;
   cursor: pointer;
 }
-
 main .button2 {
   background-color: white;
   color: black;
@@ -352,17 +329,14 @@ main .button2 {
   padding: 12px 2px;
   border-radius: 4px;
 }
-
 main .button2:hover {
   background-color: #008CBA;
   color: white;
 }
-
 main fieldset {
   width: 50vw;
   display: grid;
 }
-
 main #span1 input {
   justify-content: stretch;
   width: 30%;
@@ -370,64 +344,52 @@ main #span1 input {
   margin: 0px;
   padding: 0px;
 }
-
 main #span1 button {
   justify-content: stretch;
   width: 25%;
-  height: 26  px;
+  height: 26 px;
   margin-left: 2px;
   padding: 0px;
 }
-
 main #formain {
   justify-content: center;
 }
-
 main #formain #foto {
   width: 60%;
 }
-
 main #span2 {
   display: block;
   text-align: center;
 }
-
 main #span2 > button {
   width: 180px;
   margin: 0.5%;
 }
-
 main fieldset input:required:focus:valid {
   background: url("https://assets.digitalocean.com/labs/icons/hand-thumbs-up.svg") no-repeat 95% 50% #e3ffaa;
   background-size: 18px;
   border-color: green;
 }
-
 main fieldset input:required:focus:invalid {
   background: url("https://assets.digitalocean.com/labs/icons/exclamation-triangle-fill.svg") no-repeat 95% 50% #ffaea6;
   background-size: 18px;
   border-color: #c9b612;
 }
-
 main #formain #categoría {
   width: 177px;
   margin-left: 15px;
 }
-
 main #formain #fecha {
   width: 177px;
 }
-
 main #formain input {
   margin-left: 15px;
 }
-
 main #formain label {
   margin-left: 10%;
   display: inline-block;
   width: 100px;
 }
-
 main textarea {
   margin-left: 15px;
   resize: none;
@@ -438,30 +400,34 @@ main textarea {
     width: 85vw;
     display: grid;
   }
+
   main #formain #foto {
     margin-left: 15px;
     width: 55%;
   }
 }
-
 @media screen and (max-width: 528px) {
   main #formain label {
     margin-left: 5%;
     display: inline-block;
     width: auto;
   }
+
   main #formain {
     justify-content: stretch;
     display: grid;
   }
+
   main #formain #categoría {
     margin-left: 15px;
     width: auto;
   }
+
   main #formain #foto {
     margin-left: 15px;
     width: 80%;
   }
+
   main #span1 button {
     justify-content: stretch;
     width: 35%;
@@ -471,7 +437,6 @@ main textarea {
     margin-left: 0px;
   }
 }
-
 @media screen and (max-width: 446px) {
   main #span1 {
     justify-content: stretch;
@@ -480,20 +445,22 @@ main textarea {
     margin: 0px;
     padding: 0px;
   }
+
   main #span2 > button {
     width: 45%;
     margin: 0.5%;
   }
+
   main #formain #fecha {
     width: 172px;
   }
+
   main #formain label {
     margin-left: 5%;
     display: inline-block;
     width: auto;
   }
 }
-
 footer {
   grid-column: 1/5;
   border: solid black;
@@ -504,15 +471,12 @@ footer {
   background-color: cornflowerblue;
   color: black;
 }
-
 footer #que_hacemos {
   grid-column: 1/2;
 }
-
 footer #enlaces {
   grid-column: 2/3;
 }
-
 footer #contáctanos {
   grid-column: 3/4;
 }
@@ -525,4 +489,5 @@ body {
   grid-template-rows: 15% auto auto 8%;
   gap: 10px;
 }
+
 /*# sourceMappingURL=style.css.map */

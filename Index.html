@@ -6,26 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/edde6265f2.js" crossorigin="anonymous"></script>
     <title>Tarea4_Santillan Salas, Adrian</title>
+    <link rel="stylesheet" href="css/bulma.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    <header>
-            
-           
-            <h1 id="titulo">Sistema integrado de gestión</h1>
-            
+<body class="container content-wrapper">
+    
+    <header class="column is-full">
+            <div class="columns is-multiline is-centered">
+                <div class="column is-10-desktop is-12-tablet is-12-mobile is-narrow">
+                    <h1 id="titulo">Sistema integrado de gestión</h1>
+                </div>
 
-            <div id="usuariocabecera">
-            <img class="usuario" src="Imagenes/usuario.jpeg" alt="Foto del usuario">
-            <span>
-            <label>
-                    Usuario
-            </label>
-            </span>
-            
-       
+                <div id="usuariocabecera" class="column is-narrow">
+                    <img class="usuario" src="Imagenes/usuario.jpeg" alt="Foto del usuario">
+                    <span>
+                    <label>
+                            Usuario
+                    </label>
+                    </span>
+                </div>
+            </div>
     </header>
-    <nav>
+    
+
+    <nav class="column is-full">
+       <div class="columns is-multiline is-vcentered">
         <div id="menu-hamburguesa">
             <button class="boton-hamburguesa">
                 <i class="fas fa-bars"></i>
@@ -50,10 +55,10 @@
         </div>
 
         
-
+        <div class="column is-8">
         <div class="navmovil">       
         <ul>
-            <li>
+        <li>
 
                 <div class="oculto">
 
@@ -73,13 +78,14 @@
                 </ul>
 
                 </div>
-                </li>
+        </li>
                 
         </ul>
-        </div> 
+        </div>
+        </div>
             
         
-
+        <div class="column is-4">
         <div class="ulnav2">
 
             <ul>   
@@ -93,21 +99,27 @@
                     </button>
             </ul>
         </div>
+        </div>
+        
+        </div> 
                 
     </nav>
 
-    <main>
+    <main class="column is-full">
         <br>
         <br>
-       <div class="formulario">
-        <fieldset>
+       <div class="columns is-multiline">
+        <div class="formulario">
+        <fieldset class="column is-offset-4">
             <br>
             <legend>Agregar Producto</legend>
             <form id="formain">
                 <label id="lacodigo" for="código">Código* </label>
                 <span id="span1">
                     <input type="tel" id="código" placeholder="Solo números" maxlength="6" pattern="[0-9]{6}" title="Debes ingresar 6 números" required>
-                    <button type="submit" id=validar value="Validar" class="buttonForm button2">Validar</button>
+                    <a class="button is-primary is-small">
+                    Validar
+                    </a>
                 </span>
                 <br>  
                 <br>   
@@ -166,34 +178,39 @@
                 <br>
                 <br>
                 <span id="span2">
-                    <button type="submit" value="grabar" class="buttonForm button2">Grabar</button>
-                    <button type="reset" value="limpiar" class="buttonForm button2">Limpiar</button>
+                    <a class="button is-info is-outlined">
+                    Grabar
+                    </a>
+                    <a class="button is-link is-outlined">
+                    Limpiar
+                    </a>
                 </span>
             </form>
         </fieldset>
         <br>
         <br>
         </div>
+        </div>
     </main>
 
-    <footer>
-        <div id="que_hacemos" >
+    <footer class="column is-full">
+        <div class="columns is-multiline">        
+        <div id="que_hacemos" class="column is-4-desktop is-12-tablet is-12-mobile">
             <a href="#">¿Qué hacemos?</a>
         </div>
-        <div id="enlaces">
+        <div id="enlaces" class="column is-4-desktop is-12-tablet is-12-mobile">
             <a href="#">
                 Enlaces principales
             </a>
         </div>
-        <div id="contáctanos">
+        <div id="contáctanos" class="column is-4-desktop is-12-tablet is-12-mobile">
             <a href="#">
                 Contáctanos
             </a>
         </div>
-
+        </div>
     </footer>
-
-    
+       
 
 </body>
 </html>
