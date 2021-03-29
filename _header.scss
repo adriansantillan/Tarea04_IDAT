@@ -13,17 +13,21 @@ header {
     background-color: #008CBA;
     animation-name: example;
     animation-duration: 4s;
-    #titulo {
-      display: grid;
+    border: $border-style;
+    
+    .content #titulo {
+      
       grid-column: 3/4;
-      justify-self: start;
-      align-content: center;
-      padding-bottom: 10px;
+      color:white;
+      margin-top: 60px;
+      margin-left: 190px;
+      
     }
     #usuariocabecera {
       grid-column: 4/5;
       justify-self: center;
       align-self: center;
+      margin-top: 40px;
     }
     img {
         @include style-img-usuariocabecera;
