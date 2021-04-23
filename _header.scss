@@ -26,8 +26,10 @@ header {
     #usuariocabecera {
       grid-column: 4/5;
       justify-self: center;
-      align-self: center;
+      align-self: flex-end;
       margin-top: 40px;
+      display: inline-flex;
+      gap: 10px;
     }
     img {
         @include style-img-usuariocabecera;

@@ -59,9 +59,9 @@ nav{
       list-style-type: none;
       height: 100%;
     }
-    .ulnav2 li #lupa {
-      width: 20px;
-      height: 20px;
+    .ulnav2 li #botonbuscar {
+      width: 30px;
+      height: 30px;
     }
     img {
       width: 30px;
@@ -75,6 +75,7 @@ nav{
       animation: mymove 1.5s ;
       animation-timing-function: ease-in-out;
       }
+    
     @keyframes mymove {
           from {left: 0px;}
           to {left: 100px;}
@@ -84,7 +85,7 @@ nav{
           width:100%;
         }
       .button {
-      color: white;
+      color: black;
       margin: 0.5%;
       padding: 1.5%;
       text-align: center;
@@ -111,6 +112,7 @@ nav{
           color: black;
         border-radius: 5px;
           border: 2px solid #555555;
+          
         }
         
       .button5:hover {

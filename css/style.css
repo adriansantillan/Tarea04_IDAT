@@ -22,14 +22,14 @@ header .content #titulo {
 header #usuariocabecera {
   grid-column: 4/5;
   justify-self: center;
-  align-self: center;
+  align-self: flex-end;
   margin-top: 40px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  gap: 10px;
 }
 header img {
-  width: 50px;
-  height: 50px;
-  -webkit-clip-path: circle(50%);
-          clip-path: circle(50%);
   opacity: 0.6;
 }
 
@@ -106,9 +106,9 @@ nav .ulnav2 ul {
   list-style-type: none;
   height: 100%;
 }
-nav .ulnav2 li #lupa {
-  width: 20px;
-  height: 20px;
+nav .ulnav2 li #botonbuscar {
+  width: 30px;
+  height: 30px;
 }
 nav img {
   width: 30px;
@@ -149,7 +149,7 @@ nav #formbuscar {
   width: 100%;
 }
 nav .button {
-  color: white;
+  color: black;
   margin: 0.5%;
   padding: 1.5%;
   text-align: center;
@@ -347,10 +347,11 @@ main {
           justify-content: center;
   background-color: #e1edf3;
 }
-main form#formain input {
-  border: 2px solid #8c8c8c;
-  border-radius: 5px;
-  height: 25px;
+main #span1 {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  gap: 10px;
 }
 main .buttonForm {
   color: white;
@@ -364,47 +365,14 @@ main .buttonForm {
           transition-duration: 0.4s;
   cursor: pointer;
 }
-main .button2 {
-  background-color: white;
-  color: black;
-  text-align: center;
-  border: 2px solid #008CBA;
-  padding: 12px 2px;
-  border-radius: 4px;
-}
-main .button2:hover {
-  background-color: #008CBA;
-  color: white;
-}
-main fieldset {
-  width: 50vw;
-  display: grid;
-}
-main #span1 input {
-  -webkit-box-pack: stretch;
-      -ms-flex-pack: stretch;
-          justify-content: stretch;
-  width: 30%;
-  height: 20px;
-  margin: 0px;
-  padding: 0px;
-}
-main #span1 button {
-  -webkit-box-pack: stretch;
-      -ms-flex-pack: stretch;
-          justify-content: stretch;
-  width: 25%;
-  height: 26 px;
-  margin-left: 2px;
-  padding: 0px;
-}
 main #formain {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
-main #formain #foto {
-  width: 60%;
+main fieldset {
+  width: 50vw;
+  display: grid;
 }
 main #span2 {
   display: block;
@@ -428,18 +396,44 @@ main #formain #categoría {
   width: 177px;
   margin-left: 15px;
 }
+main #color_etiqueta {
+  width: 77px;
+}
 main #formain #fecha {
   width: 177px;
+}
+main #formain #fieldFecha {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+main #formain #fieldCodigo {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+main #formain #fieldCategoria {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+main #formain #fieldColor {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+main #formain #fieldFoto {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
 }
 main #formain input {
   margin-left: 15px;
 }
 main #formain label {
   margin-left: 10%;
-  display: inline-block;
-  width: 100px;
 }
-main textarea {
+main .textarea {
   margin-left: 15px;
   resize: none;
 }

@@ -16,10 +16,11 @@ main {
     justify-content: center;
     background-color: #e1edf3;
     
-    form#formain input{
-      border: 2px solid #8c8c8c;
-      border-radius: 5px;
-      height: 25px;
+    
+    #span1 {
+      display: inline-flex;
+      gap: 10px;
+      
     }
     .buttonForm {
   
@@ -33,44 +34,22 @@ main {
       transition-duration: 0.4s;
       cursor: pointer;
     }
-    .button2 {
-      background-color: white; 
-      color: black; 
-      text-align: center;
-      border: 2px solid #008CBA;
-      padding: 12px 2px;
-      border-radius: 4px;
+        
+      #formain {
+      justify-content: center;
+      ///background-color: chartreuse;
     }
-    .button2:hover {
-      background-color: #008CBA;
-      color: white;
-    }
+    
+    
     fieldset {
       width: 50vw;
       display: grid;
-    }
-    #span1 input {
-      justify-content: stretch;
-      width: 30%;
-      height: 20px;
-      margin: 0px;
-      padding: 0px;
+     
     }
     
-    #span1 button {
-      justify-content: stretch;
-      width: 25%;
-      height: 26  px;
-      margin-left: 2px;
-      padding: 0px;
-    }
-   
-    #formain {
-      justify-content: center;
-    }
-    #formain  #foto {
-      width: 60%;
-    }
+    // #formain  #foto {
+    //   width: 80px;
+    // }
     #span2 {
       display: block;
       text-align: center;
@@ -94,22 +73,51 @@ main {
       width: 177px;
       margin-left: 15px;
     }
+
+    #color_etiqueta
+    {
+      width: 77px;
+      
+    }
+    
+   
     #formain #fecha
     {
       width: 177px;
     }
+    #formain #fieldFecha{
+      display: inline-flex;
+    }
+    #formain #fieldCodigo{
+      display: inline-flex;
+    }
+
+    #formain #fieldCategoria{
+      display: inline-flex;
+    }
+    #formain #fieldColor{
+      display: inline-flex;
+    }
+    
+    #formain #fieldFoto{
+      display: inline-flex;
+    }  
+    
     #formain input {
       margin-left: 15px;
+      
     }
     #formain label {
       margin-left: 10%;
-      display: inline-block;
-      width: 100px;
+      
+            
     }
-    textarea {
+    
+    .textarea {
       margin-left: 15px;
       resize: none;
     }
+   
  
 }
 
