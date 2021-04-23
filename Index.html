@@ -15,12 +15,16 @@
             <div class="columns is-multiline is-centered">
                 <div class="column is-10-desktop is-12-tablet is-12-mobile is-narrow">
                     <div class="content">
-                    <h1 id="titulo">Sistema integrado de gestión</h1>
+                    <h2 class="title is-2" id="titulo">Sistema integrado de gestión</h2>
                     </div>
                 </div>
 
+                
                 <div id="usuariocabecera" class="column is-narrow">
-                    <img class="usuario" src="Imagenes/usuario.jpg" alt="Foto del usuario">
+                    <figure class="image is-48x48">
+                        <img class="is-rounded" src="Imagenes/usuario.jpg" alt="Foto del usuario">
+                    </figure>
+                    
                     <span>
                     <label>
                             Usuario 1
@@ -63,12 +67,41 @@
             <li>
                    <div class="ulnav ingreso">
                     <ul>
-                        <li  class="button button5"><i class="fa fa-home fa-2x" aria-hidden="true"></i><br><label for="Inicio">Inicio</label> 
-                        <li  class="button button5"><i class="fas fa-user fa-2x" aria-hidden="true"></i><br><label fot="Usuario">Usuarios</label>
-                        <li  class="button  button5"><i class="fas fa-users fa-2x" aria-hidden="true"></i><br><label for="Clientes">Clientes</label>
-                        <li  class="button  button5"><i class="fas fa-database fa-2x" aria-hidden="true"></i><br><label for="Proveedores">Proveedores</label>
-                        <li id="boton4" class="button  button5"><i class="fas fa-qrcode fa-2x" aria-hidden="true"></i><br><label for="Productos">Productos</label>
-                    
+                        <li  class="button button5">
+                            <span class="icon-text" id="icono">
+                                <span class="icon is-large">
+                                    <i class="fa fa-home fa-2x" aria-hidden="true"></i>
+                                </span>                        
+                               <span>Inicio</span>
+                            </span>
+                        <li  class="button button5">
+                            <span class="icon-text">
+                                <span class="icon">
+                                    <i class="fas fa-user fa-2x" aria-hidden="true"></i>
+                                </span>                        
+                                <span>Usuarios</span>
+                            </span>
+                        <li  class="button  button5">
+                            <span class="icon-text">
+                                <span class="icon">
+                                <i class="fas fa-users fa-2x" aria-hidden="true"></i>
+                                </span>
+                                <span>Clientes</span>
+                            </span>
+                        <li  class="button  button5">
+                            <span class="icon-text">
+                                <span class="icon">
+                                <i class="fas fa-database fa-2x" aria-hidden="true"></i>
+                                </span>
+                                <span>Proveedores</span>
+                            </span>
+                        <li id="boton4" class="button  button5">
+                            <span class="icon-text">
+                                <span class="icon">
+                                <i class="fas fa-qrcode fa-2x" aria-hidden="true"></i>
+                                </span>
+                                <span>Productos</span>
+                            </span>
                     </ul>
 
                     </div>
@@ -89,9 +122,15 @@
                     <label for="buscador">Buscar en la web</label>
                     <input type="search" id="inputbuscador" placeholder="Buscar">
             
-                    <button id="botonbuscar"  >
-                        <i class="fas fa-search" aria-hidden="true"></i>    
+                    
+                    <button class="button" id="botonbuscar">
+                        <span class="icon is-small">
+                        <i class="fas fa-search" aria-hidden="true"></i>  
+                        </span>  
                     </button>
+                    
+
+                    
             </ul>
         </div>
         </div>
@@ -105,83 +144,133 @@
         <br>
        <div class="columns is-multiline">
         <div class="formulario">
-        <fieldset class="column is-offset-4">
+        
+            <fieldset class="column is-offset-4">
+            <div class="box">
             <br>
             <legend>Agregar Producto</legend>
             <form id="formain">
-                <label id="lacodigo" for="código">Código* </label>
-                <span id="span1">
-                    <input type="tel" id="código" placeholder="Solo números" maxlength="6" pattern="[0-9]{6}" title="Debes ingresar 6 números" required>
-                    <a class="button is-primary is-small">
+                <div class="field" id="fieldCodigo">
+                <label class="label" id="lacodigo" for="código">Código* </label>
+                <div class="control" id="span1">
+                    <input class="input" type="tel" id="código" placeholder="Solo números" maxlength="6" pattern="[0-9]{6}" title="Debes ingresar 6 números" required>
+                    <button class="button is-primary is-small">
                     Validar
-                    </a>
-                </span>
-                <br>  
-                <br>   
-                <label for="nombre">Nombre*</label>
-                <input type="text" id="nombre" placeholder="Solo letras y números" pattern="[a-zA-Z0-9]{2,100}" title="Debes ingresar solo letras y números" required>
+                    </button>
+                </div>
+
+                </div>
+                <div class="field">
+                <label class="label" for="nombre">Nombre*</label>
+                    <div class="control">
+                    <input class="input" type="text" id="nombre" placeholder="Solo letras y números" pattern="[a-zA-Z0-9]{2,100}" title="Debes ingresar solo letras y números" required>
+                    </div>
+                </div>
+                
+                <div class="field">
+                <label class="label" for="abreviatura">Abreviatura</label>
+                    <div class="control">
+                    <input class="input" type="text" id="abreviatura" maxlength="10" placeholder="Solo letras" pattern="[a-zA-Z]{2,10}" title="Debes ingresar solo letras" required>
+                    </div>
+                </div>
+            
+                <div class="field" id="fieldCategoria">
+                <label class="label" for="categoría">Categoría*</label>
+                    <div class="select">
+                    <select id="categoría" required>
+                        <option value="categoría">Lácteos</option>
+                        <option value="categoría">Panes especiales</option>
+                        <option value="categoría">Pasteles</option>
+                    </select>
+                    </div>
+                </div>
+
+                <div class="field">
+                <label class="label" for="ruc">RUC Proveedor*</label>
+                    <div class="control">
+                    <input class="input" type=tel id="ruc" placeholder="Solo números" pattern="[0-9]{11}" maxlength="11" title="Debes ingresar 11 números" required>
+                    </div>
+                </div>
+
+                <div class="field">
+                <label class="label" for="precio">Precio*</label>
+                    <div class="control">
+                    <input class="input" type="number" id="precio" step="0.01" title="Solo números decimales con 2 dígitos" required>
+                    </div>
+                </div>
+
+                <div class="field" id="fieldColor">
+                <label class="label" for="color_etiqueta">Color de etiqueta</label>
+                    <div class="control">
+                    <input class="input" type="color" id="color_etiqueta">
+                    </div>
+                </div>
                 <br>
-                <br>
-                <label for="abreviatura">Abreviatura</label>
-                <input type="text" id="abreviatura" maxlength="10" placeholder="Solo letras" pattern="[a-zA-Z]{2,10}" title="Debes ingresar solo letras" required>
-                <br>
-                <br>
-                <label for="categoría">Categoría*</label>
-                <select id="categoría" required>
-                <option value="categoría">Lácteos</option>
-                <option value="categoría">Panes especiales</option>
-                <option value="categoría">Pasteles</option>
-                </select>
-                <br>
-                <br>
-                <label for="ruc">RUC Proveedor*</label>
-                <input type=tel id="ruc" placeholder="Solo números" pattern="[0-9]{11}" maxlength="11" title="Debes ingresar 11 números" required>
-                <br>
-                <br>
-                <label for="precio">Precio*</label>
-                <input type="number" id="precio" step="0.01" title="Solo números decimales con 2 dígitos" required>
-                <br>
-                <br>
-                <label for="color_etiqueta">Color de etiqueta</label>
-                <input type="color" id="color_etiqueta">
-                <br>
-                <br>
-                <label for="fecha">Fecha*</label>
-                <input type="date" id="fecha" required>
-                <br>
-                <br>
-                <label for="estado">Estado*</label>
-                <br>
-                <label for="activo">Activo</label>
-                <input type="radio" id="activo" name="estado" required>
-                <label for="Suspendido">Suspendido</label>
-                <input type="radio" id="Suspendido" name="estado">
-                <label for="De baja">De baja</label>
-                <input type="radio" id="De baja" name="estado">
-                <br>
-                <br>
-                <label for="impuesto">Afecto a impuesto*</label>
-                <input type="checkbox" id="impuesto" required>
-                <br>
-                <br>
-                <label for="foto">Foto  </label>
-                <input type="file" id="foto" accept="image/png , image/jpg">
-                <br> 
-                <br>
-                <label for="descripción">Descripción</label>
-                <textarea id="descripción"></textarea>
-                <br>
-                <br>
+                <div class="field" id=fieldFecha>
+                <label class="label" for="fecha">Fecha*</label>
+                    <div class="control">
+                    <input class="input" type="date" id="fecha" required>
+                    </div>
+                </div>
+
+                <div class="field">
+                <label class="label" for="estado">Estado*</label>
+                    <div class="control">
+                    <label class="radio" for="activo">
+                        <input type="radio" id="activo" name="estado" required>
+                        Activo
+                    </label>
+                    <label class="radio" for="Suspendido">
+                        <input type="radio" id="Suspendido" name="estado">
+                        Suspendido
+                    </label>
+                    <label class="radio" for="De baja">
+                        <input type="radio" id="De baja" name="estado">
+                        De baja
+                    </label>
+                    </div>
+                </div>
+
+                <div class="field">              
+                <label class="checkbox" for="impuesto">
+                    <input type="checkbox" id="impuesto" required>
+                    Afecto a impuesto*
+                </label>
+                </div> 
+
+                <div class="field" id="fieldFoto">
+                <label class="label" for="foto">Foto  </label>
+                    <div class="file">
+                        <label class="file-label">
+                        <input class="file-input" type="file" id="foto" accept="image/png , image/jpg">
+                        <span class="file-cta">
+                            <span class="file-icon">
+                              <i class="fas fa-upload"></i>
+                            </span>
+                            <span class="file-label">
+                              Seleccionar archivo
+                            </span>
+                          </span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="field">
+                <label class="label" for="descripción">Descripción</label>
+                    <textarea class="textarea" id="descripción"></textarea>
+                </div>
+
                 <span id="span2">
-                    <a class="button is-info is-outlined">
+                    <button class="button is-info is-outlined">
                     Grabar
-                    </a>
-                    <a class="button is-link is-outlined">
+                    </button>
+                    <button class="button is-link is-outlined">
                     Limpiar
-                    </a>
+                    </button>
                 </span>
             </form>
-        </fieldset>
+            </fieldset>
+        </div>
         <br>
         <br>
         </div>
